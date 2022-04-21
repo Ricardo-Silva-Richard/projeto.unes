@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #d1724c;
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #4c76d1;
+    border-radius: 40px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    border-top: 6px solid rgb(72, 73, 156);
+}
+
+/* html,
+body {
+    height: 100%;
+} */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+.header .container {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.menu ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #757881;
+    padding: 10px;
+}
+
+li a:hover {
+    border-bottom: 2px solid rgb(228, 96, 63);
+
+}
+
+/*quem somos*/
+
+
+.universidade h2 {
+    padding: 20px;
+    font-size: 2em;
+    padding-bottom: 20px;
+    color: #757881;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.listas {
+    max-width: 300px;
+    margin: 0 auto;
+
+    color: rgb(27, 3, 3);
+
+}
+
+.listas li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.listas li::after{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 25px;
+    background-color: rgb(255, 102, 0);
+    margin-left: -10px;
+    margin-top:  -22px;
+    
+}
+
+/*Formulário*/
+form{
+  margin-top: 50px;  
+   max-width: 500px; 
+   margin: 50px auto;
+   text-align: center;
+   border: 2px solid #ccc;
+   padding: 20px;
+}
+form input{
+width: 80%;
+padding: 15px 10px;
+margin: 10px 0;
+
+}
+
+.submit{
+    width: 70px;
+    height: 40px;
+    align-items: center;
+    
+}
+
+
+
+/*responsive header*/
+@media (max-width:768px) {
+    .header {
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .menu li a {
+        font-size: 1em;
+    }
+
+    .logo {
+        width: 120px;
+
+    }
+
+    .universidade p {
+        font-size: 1em;
+
+    }
+
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (max-width:500px) {
+ .container{
+     max-width: 400px;
+     
+ }
+ .logo{
+     margin-bottom: 10px;
+ }
+}
+
+/*apresentacao-banner*/
+.apresentacao-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.apresentacao-banner img {
+    width: 75%;
+    padding-bottom: 20px;
+}
+
+.universidade {
+    max-width: 75%;
+    padding: 20px 0;
+    margin: 0 auto;
+
+}
+
+.universidade h1 {
+    font-size: 2em;
+    padding-bottom: 20px;
+    color: #757881;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.universidade h1::after {
+    display: block;
+    content: '';
+    width: 70px;
+    height: 3px;
+    background-color: #d1724c;
+    margin: 20px auto;
+}
+
+.universidade p {
+    font-size: 1.2em;
+    font-weight: lighter;
+    line-height: 1.4;
+    text-align: justify;
+    font-variant: small-caps;
+    color: rgb(141, 134, 134);
+
+}
+
+.footer {
+    padding: 30px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,105,201,1) 42%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer h1 {
+    font-size: 1.2em;
+    color: #fefeff;
+    font-family: 'Noto Serif', serif;
+}
